@@ -68,12 +68,6 @@ This website was developed by CodeWithNaqvi (CWN), a leading web development com
     - "About Us"
     - "Services"
     - "Contact"
-  - Contact Information:
-    - "Phone: [Your Phone Number]"
-    - "Email: [Your Email Address]"
-    - "Address: [Your Office Address]"
-  - Social Media Icons: "Follow us on [Social Media Platforms]"
-  - Legal Links: "Privacy Policy | Terms of Service"
 
 ## Installation
 
