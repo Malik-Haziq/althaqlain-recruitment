@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "index.html",
-    "./node_modules/Al-Thaqlain International Recruitment Company/**/*.js",
-    "careers.html",
-  ],
+  content: ["index.html", "./node_modules/flowbite/**/*.js", "careers.html"],
   theme: {
     extend: {
       colors: {

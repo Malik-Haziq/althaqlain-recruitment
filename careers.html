@@ -41,8 +41,7 @@
   <header class="fixed w-full">
     <nav class="bg-white border-gray-200">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://Al-Thaqlain International Recruitment Company.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="./images/logo.jpeg" class="h-8" alt="Al-Thaqlain International Recruitment Company Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap ">Al-Thaqlain International Recruitment
             Company</span>
@@ -279,7 +278,7 @@
     <div class="mx-auto max-w-screen-xl">
       <div class=" md:flex md:justify-between">
         <div class="mb-12 md:mb-0 max-w-sm">
-          <a href="https://Al-Thaqlain International Recruitment Company.com" class="flex items-center mb-6">
+          <a href="/" class="flex items-center mb-6">
             <img src="./images/logo.jpeg" class="mr-3 h-8" alt="Al-Thaqlain International Recruitment Company Logo" />
           </a>
           <p class="text-gray-500 mb-4">Office 24-G Irshad Arcade Aabpara Market
@@ -373,28 +372,26 @@
       </div>
     </div>
   </footer>
-  <script
-    src="https://unpkg.com/Al-Thaqlain International Recruitment Company@1.4.1/dist/Al-Thaqlain International Recruitment Company.js"></script>
-</body>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('applyModal');
-    const applyButtons = document.querySelectorAll('.apply-btn');
-    const closeModalButton = modal.querySelector('.close-btn');
+  <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 
-    applyButtons.forEach(button => {
-      button.addEventListener('click', (event) => {
-        event.preventDefault();
-        modal.classList.remove('hidden');
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('applyModal');
+      const applyButtons = document.querySelectorAll('.apply-btn');
+      const closeModalButton = modal.querySelector('.close-btn');
+
+      applyButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+          event.preventDefault();
+          modal.classList.remove('hidden');
+        });
+      });
+
+      closeModalButton.addEventListener('click', () => {
+        modal.classList.add('hidden');
       });
     });
-
-    closeModalButton.addEventListener('click', () => {
-      modal.classList.add('hidden');
-    });
-  });
-
-
-</script>
+  </script>
+</body>
 
 </html>
