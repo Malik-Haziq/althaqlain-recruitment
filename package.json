@@ -4,10 +4,14 @@
   "description": "At Althaqlain, we specialize in connecting skilled and unskilled labor with global opportunities. Our mission is to bridge the gap between talent and demand, providing reliable and efficient manpower solutions to industries worldwide.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss ./input.css -o dist/output.css",
+    "watch:css": "postcss ./input.css -o ./output.css --watch"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.19",
     "flowbite": "^2.3.0",
-    "tailwindcss": "^3.4.3"
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4"
   }
 }
