@@ -100,6 +100,10 @@ section {
   margin-left: var(--f-large);
 }
 
+.bg {
+  background-color: #e6326b;
+}
+
 img {
   cursor: pointer;
 }
@@ -133,10 +137,6 @@ header {
 .navbar .nav-links {
   display: flex;
   align-items: center;
-}
-
-.nav-links a:hover {
-  color: var(--pink);
 }
 
 .navbar .dropdown {
