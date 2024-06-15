@@ -63,6 +63,9 @@
     <link rel="stylesheet" href="index.css" />
     <script src="/index.js" defer></script>
     <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header class="navbar">
@@ -89,7 +92,7 @@
     <!-- About us  -->
     <section class="bg-white" id="about">
       <div class="about_us tops">
-        <div class="about_text">
+        <div class="about_text" data-aos="fade-right">
           <h3>About Us</h3>
           <p>
             Al-Thaqlain International Recruitment Company assists companies with
@@ -111,11 +114,12 @@
             & Mineral Water Supply), and Heavy Machinery Supply.
           </p>
         </div>
-        <div class="about_img">
+        <div class="about_img" data-aos="fade-left">
           <img src="/images/About Us/About.webp" alt="About" />
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer>
       <main class="footer_main">
@@ -216,5 +220,9 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -61,96 +61,12 @@
     <meta name="theme-color" content="#ffffff" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
-    <header class="fixed w-full">
-      <nav class="bg-white border-gray-200">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 mb-20"
-        >
-          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img
-              src="./images/logo.jpeg"
-              class="h-8"
-              alt="Al-Thaqlain International Recruitment Company Logo"
-            />
-          </a>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-100"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
-            >
-              <li>
-                <a
-                  href="/index.html"
-                  class="block py-2 px-3 text-white bg-primary-600 rounded md:bg-transparent md:text-primary-600 md:p-0"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/about.html"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#Services"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#Clients"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0"
-                  >Clients</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/contact.html"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0"
-                  >Contact</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/careers.html"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0"
-                  >Careers</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <script src="/index.js" defer></script>
+
     <script src="index.js" defer></script>
     <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -171,6 +87,7 @@
             <a href="/heavy_machine.html">Heavy Machinery</a>
           </div>
         </div>
+
         <a href="/careers.html">Careers</a>
         <a href="/contact.html">Contact</a>
       </div>
@@ -179,7 +96,7 @@
     <!-- header block -->
     <section class="bg-white visa_header">
       <div class="head">
-        <div class="header_text">
+        <div class="header_text" data-aos="fade-right">
           <h1>Visa Services and Facilitation</h1>
           <p>
             Al-Thaqlain International Recruitment Company offer a complete
@@ -196,61 +113,72 @@
     </section>
 
     <!-- Clients block -->
-    <section class="bg-gray-50 clients" id="Clients">
-      <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
-        <h2 class="heading">Trusted By</h2>
-        <div
-          class="grid grid-cols-2 gap-8 text-gray-500 md:gap-12 sm:grid-cols-3 lg:grid-cols-6 left"
-        >
-          <a
-            href="#"
-            class="flex items-center lg:justify-center grayscale-0 w-24 lg:w-36"
-          >
-            <img
-              src="./images/Trusted by/almco.png"
-              class="trusted_img"
-              alt=""
-            />
-          </a>
-          <a
-            href="#"
-            class="flex items-center lg:justify-center grayscale-0 w-24 lg:w-36 bg-gray-400"
-          >
-            <img
-              src="./images/Trusted by/calethon-logo.png"
-              class="trusted_img"
-              alt=""
-            />
-          </a>
-          <a
-            href="#"
-            class="flex items-center lg:justify-center grayscale-0 w-24 lg:w-36"
-          >
-            <img src="./images/Trusted by/mik.png" class="trusted_img" alt="" />
-          </a>
-          <a
-            href="#"
-            class="flex items-center lg:justify-center grayscale-0 w-24 lg:w-36"
-          >
-            <img src="./images/Trusted by/tws.jpg" class="trusted_img" alt="" />
-          </a>
-          <a
-            href="#"
-            class="flex items-center lg:justify-center grayscale-0 w-24 lg:w-36"
-          >
-            <img src="./images/Trusted by/ac.jpg" class="trusted_img" alt="" />
-          </a>
-          <a
-            href="#"
-            class="flex items-center lg:justify-center grayscale-0 w-24 lg:w-36"
-          >
-            <img
-              src="./images/Trusted by/rmt.webp"
-              class="trusted_img"
-              alt=""
-            />
-          </a>
-        </div>
+
+    <section class="bg-dark">
+      <h2 class="heading">Trusted By</h2>
+      <div class="trusted row">
+        <img
+          src="./images/Trusted by/almco.png"
+          class="trusted_img"
+          alt=""
+          data-aos="zoom-in"
+        />
+
+        <img
+          src="./images/Trusted by/ac.jpg"
+          class="trusted_img"
+          alt="ac"
+          data-aos="zoom-in"
+        />
+
+        <img
+          src="./images/Trusted by/Counstruction.jpeg"
+          class="trusted_img"
+          alt=""
+          data-aos="zoom-in"
+        />
+
+        <img
+          src="./images/Trusted by/edgo.jpeg"
+          class="trusted_img"
+          alt="edgo"
+          data-aos="zoom-in"
+        />
+
+        <img
+          src="./images/Trusted by/mik.png"
+          class="trusted_img"
+          alt="mik"
+          data-aos="zoom-in"
+        />
+
+        <img
+          src="./images/Trusted by/tec.png"
+          class="trusted_img_cta"
+          alt="tec"
+          data-aos="zoom-in"
+        />
+
+        <img
+          src="./images/Trusted by/rmt.webp"
+          class="trusted_img"
+          alt="rmt"
+          data-aos="zoom-in"
+        />
+
+        <img
+          src="./images/Trusted by/ssc.jpeg"
+          class="trusted_img"
+          alt="ssc"
+          data-aos="zoom-in"
+        />
+
+        <img
+          src="./images/Trusted by/sss.png"
+          class="trusted_img_ctas"
+          alt="sss"
+          data-aos="zoom-in"
+        />
       </div>
     </section>
 
@@ -261,7 +189,7 @@
         <p>Create sections for different types of visas, such as:</p>
       </div>
       <div class="industries_Cards">
-        <div class="visa_card">
+        <div class="visa_card" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Tourist Visas</h3>
             <p>
@@ -277,7 +205,7 @@
             >
           </div>
         </div>
-        <div class="visa_card">
+        <div class="visa_card" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Business Visas</h3>
             <p>
@@ -293,7 +221,7 @@
             >
           </div>
         </div>
-        <div class="visa_card">
+        <div class="visa_card" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Student Visa</h3>
             <p>
@@ -309,7 +237,7 @@
             >
           </div>
         </div>
-        <div class="visa_card">
+        <div class="visa_card" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Work Visa</h3>
             <p>
@@ -325,7 +253,7 @@
             >
           </div>
         </div>
-        <div class="visa_card">
+        <div class="visa_card" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Transit Visa</h3>
             <p>
@@ -345,10 +273,10 @@
     </section>
 
     <!-- infor of visa -->
-    <div class="row">
+    <div>
       <section class="info_vsia">
         <div class="visa_info">
-          <div class="application">
+          <div class="application" data-aos="fade-right">
             <h2>Application Process</h2>
             <p>Provide a step-by-step guide on how to apply for a visa:</p>
             <ul>
@@ -435,8 +363,8 @@
               </li>
             </ul>
           </div>
-          <div class="application_img">
-            <img src="images/Mobile.png" alt="application" />
+          <div class="application_img" data-aos="fade-left">
+            <img src="images/Mobile.webp" alt="application" />
           </div>
         </div>
 
@@ -446,7 +374,7 @@
             <h2 class="heading">Visa Solution to Afghanistan</h2>
           </div>
           <div class="industries_Cards">
-            <div class="visa_card_Iraq">
+            <div class="visa_card_Iraq" data-aos="zoom-in">
               <div class="industries_text">
                 <h3>Single Entry Tourist visas</h3>
                 <p>
@@ -458,7 +386,7 @@
                 </p>
               </div>
             </div>
-            <div class="visa_card_Iraq">
+            <div class="visa_card_Iraq" data-aos="zoom-in">
               <div class="industries_text">
                 <h3>UMulti Entry Visas.</h3>
                 <p>
@@ -470,7 +398,7 @@
                 </p>
               </div>
             </div>
-            <div class="visa_card_Iraq">
+            <div class="visa_card_Iraq" data-aos="zoom-in">
               <div class="industries_text">
                 <h3>BMOFA facilitation</h3>
                 <p>
@@ -487,7 +415,7 @@
         </section>
 
         <div class="visa_info">
-          <div class="application">
+          <div class="application" data-aos="fade-right">
             <h2>Contact Information</h2>
             <p>Provide contact details for further assistance:</p>
             <ul>
@@ -509,7 +437,7 @@
               </li>
             </ul>
           </div>
-          <div class="application_img">
+          <div class="application_img" data-aos="fade-left">
             <img src="/images/Contact.png" alt="Contact" />
           </div>
         </div>
@@ -522,7 +450,7 @@
         <h2 class="heading">Visa Solution to Iraq</h2>
       </div>
       <div class="industries_Cards">
-        <div class="visa_card_Iraq">
+        <div class="visa_card_Iraq" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Single and Multi-Entry Visas</h3>
             <p>
@@ -533,7 +461,7 @@
             </p>
           </div>
         </div>
-        <div class="visa_card_Iraq">
+        <div class="visa_card_Iraq" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Urgent Visas & Paper Visas</h3>
             <p>
@@ -545,7 +473,7 @@
             </p>
           </div>
         </div>
-        <div class="visa_card_Iraq">
+        <div class="visa_card_Iraq" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Blood Test & Residency Visas</h3>
             <p>
@@ -556,7 +484,7 @@
             </p>
           </div>
         </div>
-        <div class="visa_card_Iraq">
+        <div class="visa_card_Iraq" data-aos="zoom-in">
           <div class="industries_text">
             <h3>Airport Meet and Greet</h3>
             <p>
@@ -671,5 +599,9 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
