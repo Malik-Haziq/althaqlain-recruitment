@@ -97,7 +97,7 @@ section {
 }
 
 .left {
-  margin-left: var(--f-large);
+  /* margin-left: var(--f-large); */
 }
 
 .bg {
@@ -106,6 +106,10 @@ section {
 
 img {
   cursor: pointer;
+}
+
+#large {
+  max-width: 11rem;
 }
 
 header {
@@ -236,6 +240,27 @@ header {
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: var(--gutter-max);
+}
+
+.trust {
+  padding: 3rem 0;
+}
+
+.trusted {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter-min);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.trusted_img_cta {
+  max-width: 10rem;
+}
+
+.trusted_img_ctas {
+  max-width: 15rem;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -434,7 +459,7 @@ header {
 /* ---------------------------------------------------- */
 
 .visa_header {
-  padding-top: var(--gutter-max);
+  padding-top: var(--gutter-large);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url("./images/visa.webp");
   background-repeat: no-repeat;
@@ -444,7 +469,7 @@ header {
 }
 
 .visa_header .head {
-  padding-top: var(--gutter-extreme-large);
+  padding-top: var(--gutter-max);
 }
 
 .visa_header .head .header_text h1 {
@@ -911,6 +936,14 @@ header {
     font-size: var(--gutter-extreme);
     margin-bottom: var(--gutter-extreme);
   }
+
+  .trusted_img_cta {
+    max-width: 6rem;
+  }
+
+  .trusted_img {
+    max-width: var(--gutter-max);
+  }
 }
 
 @media (max-width: 410px) {
@@ -948,6 +981,10 @@ header {
   .visa_card {
     height: 21rem;
     width: 20rem;
+  }
+
+  .industries_header p {
+    padding: 0rem;
   }
 }
 
